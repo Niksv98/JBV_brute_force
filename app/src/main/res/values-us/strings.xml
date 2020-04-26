@@ -1,0 +1,350 @@
+﻿<resources>
+
+    <string name="menuHome">Home</string>
+    <string name="menuAboutProject">About NBD</string>
+    <string name="menuHowToUse">Entry structure</string>
+    <string name="menuImages">Pictures</string>
+    <string name="menuSources">Sources</string>
+    <string name="menuNotes">Labels used</string>
+    <string name="menuPublications">Publications</string>
+    <string name="menuSemanticSearch">Semantic search</string>
+    <string name="menuChangeLang">Choose the app language - Latvian</string>
+
+    <string name="appName">"New Botanical Dictionary (Latin, English, Russian, Latvian, German) (NBD)"</string>
+    <string name="constructionOfPlant">Plant structure</string>
+    <string name="constructionOfFlower">Flower structure</string>
+    <string name="constructionOfSeed">Seed structure (bean)</string>
+    <string name="constructionOfSimpleLeaf">Simple leaf structure</string>
+    <string name="constructionOfCompoundLeaf">Compound leaf structure</string>
+    <string name="constructionOfRoot">Root structure</string>
+
+    <string name="LV">LV</string>
+    <string name="LA">LA</string>
+    <string name="EN">EN</string>
+    <string name="RU">RU</string>
+    <string name="DE">DE</string>
+
+    <string-array name="languageCodes">
+        <item>EN</item>
+        <item>DE</item>
+        <item>LA</item>
+        <item>LV</item>
+        <item>RU</item>
+    </string-array>
+
+    <string name="definitionTextTezaurs">T* - Definition from www.tezaurs.lv (the definitions have been selected automatically and may be inaccurate)</string>
+
+
+    <string name="genus">genus</string>
+    <string name="subgenus">subgenus</string>
+    <string name="species">species</string>
+    <string name="subsecies">subspecies</string>
+    <string name="variety">variety</string>
+    <string name="form">form</string>
+    <string name="cultivarGroup">cultivar group</string>
+
+    <string-array name="termBackgroundText">
+        <item>genus</item>
+        <item>subgenus</item>
+        <item>species</item>
+        <item>subspecies</item>
+        <item>variety</item>
+        <item>form</item>
+        <item>cultivar group</item>
+    </string-array>
+
+
+    <string name="countryCodes">AT – in Austria\nCH - in Switzerland\nDE - in Germany\nGB - in Great Britain\nUS – in United States of America</string>
+    <string name="countryCodeTitles">Country codes</string>
+
+    <string name="fGender">Feminine gender</string>
+    <string name="mGender">Masculine gender</string>
+    <string name="nGender">Neuter gender</string>
+
+    <string name="singular">Singular</string>
+    <string name="plural">Plural</string>
+    <string name="indeclinable">indeclinable</string>
+
+    <string name="entries">Entries</string>
+    <string name="searchButtonText">Search</string>
+    <string name="searchButtonSemantics">Search (only Latin) </string>
+
+    <string name="ToastInsertTerm">Please enter the word</string>
+    <string name="ToastTooShort">The word is too short</string>
+    <string name="ToastNotInDB">The word was not found in the database</string>
+    <string name="ToastIsItRightTerm">Did you mean this entry?</string>
+    <string name="ConstructionImageSelection">Word is find in two construction images</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="semanticInfo">* Searched term</string>
+
+    <string name="gendersLegend"><i>f</i> - femininum; <i>m</i> - maskulinum; <i>n</i> - neutrum;</string>
+    <string name="gendersLegend2"><i>f</i> - femininum; <i>m</i> - maskulinum; <i>n</i> - neutrum; <i>pl</i> - pluralis;
+    <i>sg</i> - singularis</string>
+    <string name="gendersLegend3"><i>pl</i> - pluralis; <i>sg</i> - singularis</string>
+
+    <!--for table - Apzimejumi-->
+    <string name="LA_table">LA\nLatin</string>
+    <string name="EN_table">EN\nEnglish</string>
+    <string name="DE_table">DE\nGerman</string>
+    <string name="RU_table">RU\nRussian</string>
+    <string name="LV_table">LV\nLatvian</string>
+    <string name="fGenderN">f</string>
+    <string name="fLA">femininum</string>
+    <string name="fEN">female form</string>
+    <string name="fDE">Femininum</string>
+    <string name="fLV">sieviešu dzimte</string>
+    <string name="fRU">женский род</string>
+    <string name="mGenderN">m</string>
+    <string name="mLA">masculinum</string>
+    <string name="mEN">male form</string>
+    <string name="mDE">Maskulinum</string>
+    <string name="mLV">vīriešu dzimte</string>
+    <string name="mRU">мужской род</string>
+    <string name="nGenderN">n</string>
+    <string name="nLA">neutrum</string>
+    <string name="nEN">neutral form</string>
+    <string name="nDE">Neutrum</string>
+    <string name="nLV">nekatra dzimte</string>
+    <string name="nRU">средний род</string>
+    <string name="pluralN">pl</string>
+    <string name="plLA">pluralis</string>
+    <string name="plEN">plural</string>
+    <string name="plDE">Singular</string>
+    <string name="plLV">daudzskaitlis</string>
+    <string name="plRU">множественное число</string>
+    <string name="singularN">sg</string>
+    <string name="siLA">singularis</string>
+    <string name="siEN">singular</string>
+    <string name="siDE">Plural</string>
+    <string name="siLV">vienskaitlis</string>
+    <string name="siRU">единственное число</string>
+    <string name="slash">/</string>
+    <string name="slLA">vel</string>
+    <string name="slEN">or</string>
+    <string name="slDE">oder</string>
+    <string name="slLV">vai</string>
+    <string name="slRU">или</string>
+
+
+    <dimen name="flowerButtonDiameter">20dp</dimen>
+    <dimen name="plantButtonDiameter">20dp</dimen>
+    <dimen name="leafButtonDiameter">20dp</dimen>
+    <dimen name="seedButtonDiameter">20dp</dimen>
+    <dimen name="paddingStartGendersTable">3dp</dimen>
+    <dimen name="paddingEndGendersTable">3dp</dimen>
+    <dimen name="paddingAboutApp">5dp</dimen>
+    <dimen name="searchButtonWidth">45dp</dimen>
+    <dimen name="paddingReference">6dp</dimen>
+    <dimen name="paddingReferenceTop">5dp</dimen>
+    <dimen name="marginStartSynonim">60dp</dimen>
+    <dimen name="buttonSizeAllPlantConstruction">120dp</dimen>
+    <dimen name="buttonMarginConstruction">5dp</dimen>
+
+    <string name="titleAboutAppLV">Jaunā botāniskā vārdnīca.\nTermini latviešu-latīņu-angļu-krievu-vācu valodā</string>
+    <string name="subtitleAboutAppLV">Par vārdnīcu</string>
+    <string name="textAboutAppLV">\tJaunās botāniskās vārdnīcas mobilās lietotnes modelis izstrādāts 2017. gada nogalē Ventspils Augstskolas projektā „Zinātniskās dabības attīstība Ventspils Augstskolā”, sadarbojoties Tulkošanas studiju fakultātes un Informācijas tehnoloģiju fakultātes studentiem un pētniekiem. Šis ir pirmais mēģinājums izstrādāt šāda veida vārdnīcas modeli piecās valodās.
+        \n\tVārdnīcas izstrādes projektā darbojās <i>prof. Dr. philol.</i> J. Baldunčiks (zinātniskais konsultants), <i>Bc. comp.</i> N. Bērziņš (programmētājs, VeA ITF maģistrants), <i>Mg. philol.</i> S. Ozoliņa (tulkotāja), <i>Dr. philol.</i> S. Sviķe (pētniece, projekta vadītāja, tulkotāja), <i>Mg. sc. comp. </i>K. Šķirmante (pētniece), <i>Mg. philol.</i> S. Štekerhofa (korektore), I. Tīrmane (tulkotāja, VeA TSF studente). Konsultācijas sniedza <i>Dr. biol. </i>E. Vimba un Nacionālā botāniskā dārza Oranžērijas augu nodaļas vadītāja Z. Purne. Māksliniecisko noformējumu veidojusi un attēlus zīmējusi <i>Mg. art. </i>E. Ēce.
+\n\tVārdnīcā ietverti augu nosaukumi un citi botānikas termini latviešu, latīņu, angļu, kievu un vācu valodā. Vārdnīca, pirmkārt, būs noderīga tulkošanas studiju studentiem un tulkotājiem t.i. visiem, kam studijām vai darbā nepieciešami šīs jomas terminu tulkojumi un kuru dzimtā valoda ir latviešu valoda vai kuri ļoti labi pārzina šo valodu. Tomēr vārdnīca var būt noderīga arī skolēniem un viņu skolotājiem dabaszinības stundās, dabazinātņu nozaru studentiem un viņu pedagogiem, kā arī floristiem, dārzniekiem, farmaceitiem un citiem interesentiem, kas darbojas šajā jomā un kuriem nepieciešami botānikas terminu tulkojumi. Vārdnīcu var lietot arī interesenti, kuriem latviešu valoda nav dzimtā valoda, tomēr mobilās lietotnes saskarne pamatā ir izstrādāta latviešu valodā.
+\n\tVārdnīcas ievaddaļā ietverts priekšvārds, izmantotās literatūras saraksts un izmantoto apzīmējumu saraksts. Ievaddaļu iecerēts papildināt ar hipersaitēm uz saistītiem specifiskiem zinātniskajiem rakstiem par botānikas terminoloģiju, izmaiņām taksonomiskajās kategorijās, leksikogrāfiskās aptaujas rezultātiem u. tml. Vārdnīcas pamatdaļu veido dažādu botānikas terminu (augu nosaukumu, augu daļu un citu botānikas terminu) apkopojums un vizuālā vārdnīcas sadaļa (attēli un termini). Vārdnīcā galvenokārt ietverti terminoloģiskie augu nosaukumi gan latviešu valodā, gan angļu, krievu un vācu valodā. Vārdnīcā nav ietverta plašā augu nosaukumu sinonīmija (t.s. „tautā lietotie nosaukumi”) nedz latviešu valodā, nedz arī pārējās sastatītajās valodās. Precīzai auga identifikācijai un sinonīmisko nosaukumu meklēšanai noderēs dotie latīniskie nosaukumi. Latvisko terminu atlasei izmantots S. Sviķes promocijas darbā izstrādātais aptuveni 500 augu nosaukumu pamatsaraksts vidēja apjoma divvalodu tulkojošajai vārdnīcai, kas papildināts ar terminiem no plašāk izmantotajām botānikas mācību grāmatām. Latīnisko, anglisko, krievisko un vācisko terminu atlasei izmantota zinātniskā literatūra, daudzvalodu botāniskās vārdnīcas, skaidrojošās vārdnīcas, enciklopēdijas un cita speciālā literatūra, kas apkopota literatūras sarakstā. Vārdnīcā apkopoto augu nosaukumu taksonomiskās kategorijas norādītas ar krāsu marķējumu. Latviskajiem, krieviskajiem un vāciskajiem ekvivalentiem dotas gramatiskās kategorijas – dzimtes – norādes (saīsinājums latīņu valodā). Atsevišķiem augu nosaukumiem pievienotas fotogrāfijas, bet lielākai daļai augu nosaukumu dota hipersaite uz attēlu brīvajā enciklopēdijā <i>Vikipēdija</i>. Tomēr par ārējo saišu saturu vārdnīcas veidotāji neuzņemas atbildību. Atsevišķi šķirkļi ir sasaistīti ar vārdnīcu konsolidēto versiju vietnē <i>www.tezaurs.lv</i>, un šiem šķirkļiem ir dota hipersaite uz šo vietni, kur atrodamas terminu definīcijas. Ārējo saišu atvēršanai nepieciešama piekļuve internetam. Vārdnīcas modeli paredzēts atjaunināt reizi ceturksnī, par ko vārdnīcas lietotājs tiks informēts un saņems atjaunināšanas aicinājumu. Vārdnīcā tiek meklēts vārds, kas ierakstīts meklēšanas logā gan vienskaitļa, gan daudzskaitļa formā.
+\n\tNeraugoties uz rūpīgo darbu terminu atlasē un apkopošanā, kā arī mobilās lietotnes modeļa tehnisko risinājumu izstrādē, vārdnīcā, iespējams, vēl ir nepilnības un trūkumi. Visas piezīmes lūgums sūtīt projekta vadītājai uz e-pastu: <i>silga.svike@gmail.com</i>, par ko jau iepriekš paldies!
+
+        \n\n\tVārdnīcas modeļa otrais, papildinātais izdevums izstrādāts 2018. gada nogalē. Projektā darbojās <i>prof. Dr. philol.</i> J. Baldunčiks (zinātniskais konsultants), <i>Bc. comp.</i> N. Bērziņš (programmētājs, VeA ITF maģistrants), A. Liukonens (tulkotājs, VeA TSF students), <i>Dr. philol.</i> S. Sviķe (pētniece, projekta vadītāja), <i>Mg. sc. comp. </i>K. Šķirmante (pētniece, programmētāja), <i>Mg. philol.</i> S. Ozoliņa (tulkotāja), E. Žabaļūns (programmētājs, VeA ITF students). Konsultācijas sniedza <i>Dr. agr. </i>A. Stalažs. Attēlus vārdnīcas vizuālajai daļai zīmējusi <i>Mg. art.</i> E. Ozoliņa. Vārdnīcā ietverti aptuveni 890 latviešu termini. Vārdnīcā veiktie saturiskie un funkcionālie papildinājumi galvenokārt aprakstīti sadaļā “Šķirkļa uzbūve”.
+
+\n\n\t© Ventspils Augstskola, 2019
+\n\t© S. Sviķe, 2019
+\n\t© E. Ozoliņa, 2019
+</string>
+
+
+    <string name="titleAboutAppEN">The New Botanical Dictionary.\n
+Latvian-Latin-English-Russian-German Terms.</string>
+    <string name="subtitleAboutAppEN">About dictionary</string>
+    <string name="textAboutAppEN">\tThe mobile application prototype for the new botanical dictionary was designed at the end of 2017 for the Ventspils University of Applied Sciences (VeUAS) project “Development of Scientific Activity at Ventspils University of Applied Sciences” as a collaboration between the students and researchers of the Faculty of Translation Studies (FTS). This is the first attempt at developing a dictionary prototype of such shape in five languages.
+        \n\tThe following people participated in the development project for the dictionary: <i>prof., Dr. philol.</i> J. Baldunčiks (scientific consultant), <i>Bc. comp.</i> N. Bērziņš (programmer, Master’s student at Faculty of Information Technologies (FIT) VeUAS), <i>Mg. philol. </i>S. Ozoliņa (translator), <i>Dr. philol. </i>S. Sviķe (researcher, project manager, translator), <i>Mg. sc. comp.</i> K. Šķirmante (researcher), <i>Mg. philol.</i> S. Štekerhofa (corrector), I. Tīrmane (translator, student at FTS VeUAS). Consultations were provided by <i>Dr. biol. </i>E. Vimba and Z. Purne, manager of the Conservatory Department at the National Botanic Garden. The artistic design was created and the pictures were drawn by <i>Mg. art.</i> E. Ēce.
+\n\tThe dictionary contains plant names and other botanical terms in Latvian, Latin, English, Russian and German. Firstly, the dictionary would be useful for the students of translation and translators, i.e., everybody who translate terms of the aforementioned field in their studies or work, and whose native language is Latvian and who have a decent knowledge of the Latvian language. Still, the dictionary might also be useful for pupils and their teachers in natural science classes, for students of natural sciences and their lecturers. The dictionary might also be useful for florists, gardeners, pharmacists and other enthusiasts who work in the field of botany and who need translations of botanical terms. The dictionary might also be used by such enthusiasts whose native language is not Latvian; however, the interface of the mobile application is generally designed in Latvian.
+\n\tThe introduction of the dictionary contains a preface, a list of literature and a list of designations. Hyperlinks with the associated specific scientific articles on botanical terminology, changes in taxonomic categories, results of a lexicographic survey and others will be added to the introduction. The main part of the dictionary contains a collection of various botanical terms (plant names, plant parts and other botanical terms), and the visual section of the dictionary (with pictures and terms). The dictionary mainly contains terminological plant names in Latvian, English, Russian and German. The dictionary does not incorporate the extensive synonymous names of plants (the so called “popular names”) neither in Latvian, nor in any other of the involved languages. For a precise identification of a plant and for searching its synonyms, the provided names in Latin will come in useful. A general list of approximately 500 plant names for an average bilingual translating dictionary created by S. Sviķe for her dissertation is used for the selection of Latvian terms, with other terms added from the most popular botanical text books. Scientific literature, multilingual botanical dictionaries, explanatory dictionaries encyclopaedias and other specialised literature has been used for the selection of terms in Latin, English, Russian and German, and all the sources have been indicated in the list of literature. The taxonomic categories of the plant names collected in the dictionary have been marked with a colour. References to a grammatical category – the gender – have been indicated for the Latvian, Russian and German equivalents (with an abbreviation in Latin). Photographs are added to some of the plant names; however, a hyperlink to a picture in the free dictionary<i> Wikipedia </i>is provided for most of the plants. Nevertheless, the developers of the dictionary do not assume any responsibility for the content of the external links. Some entries have been linked to the consolidated dictionaries on the website <i>www.tezaurs.lv</i>; the entries are provided with a hyperlink to the website with the definitions of terms. Internet access is required to open the external links. The prototype of the dictionary will potentially be updated once every quarter. The user of the dictionary will be notified of such updates and will receive an invitation to each update. One may search for words entered both in the singular and plural form after having entered the words in the search window.
+\n\tThe dictionary may still contain imprecisions and faults, notwithstanding the precise work in selecting and collecting the terms and designing the technical solutions of the mobile application. Please send your comments to the project manager’s e-mail: silga.svike@gmail.com. Thank you in advance!
+
+\n\n\tThe second supplemented edition of the dictionary was developed at the end of 2018. The following people participated in the second stage of dictionary development: <i>Prof. Dr. philol.</i> J. Baldunčiks (scientific consultant), <i>Bc. comp.</i> N. Bērziņš (programmer, Master’s student at FIT of VeUAS), A. Liukonens (translator, student at FTS VeUAS); <i>Dr. philol. </i>S. Sviķe (researcher, project manager), <i>Mg. sc. comp.</i> K. Šķirmante (researcher, programmer), <i>Mg. philol.</i> S. Ozoliņa (translator), E. Žabaļūns (programmer, student at FIT of VeUAS). Consultations were provided by <i>Dr. agr.</i> A. Stalažs. The pictures were drawn by <i>Mg. art.</i> E. Ozoliņa. The dictionary contains about 890 Latvian terms. The content and functional additions made in the dictionary are mainly described in section "Entry structure".
+
+\n\n\t© Ventspils University of Applied Sciences, 2019
+\n\t© S. Sviķe, 2019
+\n\t© E. Ozoliņa, 2019
+</string>
+
+    <string name="titleAboutAppRU">Новый ботанический словарь.
+\nЛатышско-латинско-англо-русско-немецкий перевод терминов</string>
+    <string name="subtitleAboutAppRU">О словаре</string>
+    <string name="textAboutAppRU">
+\tМодель мобильного приложения Новый ботанический словарь разработана в конце 2017 года в рамках проекта Вентспилсской высшей школы (ВВШ) «Развитие научной деятельности в Вентспилсской высшей школе» при сотрудничестве со студентами и исследователями факультетов переводоведения (ФП) и информационных технологий (ФИТ). Это первая попытка разработать модель подобного словаря на пяти языках.
+\n\tВ проекте разработки словаря были задействованы: <i>проф., д-р филол.</i> наук Ю. Балдунчикс (научный консультант), <i>бак. комп. наук </i>Н. Берзиньш (программист, магистрант ФИТ ВВШ), <i>магистр филол. наук</i> С. Озолиня (переводчик), <i>д-р филол. наук </i>С. Свике (исследователь, руководитель проекта, переводчик), <i>магистр комп. наук</i> К. Шкирманте (исследователь), <i>магистр филол. наук </i>С. Штекерхофа (корректор), И. Тирмане (переводчик, студентка ФП ВВШ). Консультации предоставляли <i>д-р биол. наук </i>Э. Вимба и завотделом оранжерейных растений Национального ботанического сада З. Пурне. Автор художественного оформления и рисунков – <i>магистр филол. наук</i> Э. Эце.
+\n\tВ словарь включены названия растений и другие ботанические термины на латышском, латинском, английском, русском и немецком языках. В первую очередь приложение будет полезно для переводчиков и изучающих переводоведение студентов, т. е. для тех, кому по работе или учебе требуется перевод ботанических терминов и чьим родным языком является латышский, либо кто хорошо им владеет. Также словарь может пригодиться школьникам и учителям для использования на уроках природоведения, студентам и преподавателям естествознания, а также флористам, садоводам, фармацевтам и всем остальным, кто задействован в данной сфере и нуждается в переводе ботанических терминов. Словарем могут пользоваться и те, для кого латышский не является родным языком, однако пользовательский интерфейс приложения в основном разработан на латышском.
+\n\tВступительная часть словаря состоит из введения, списка использованной литературы и перечня использованных обозначений. Вступительную часть планируется пополнить гиперссылками на конкретные специфические научные статьи о ботанической терминологии, изменения в таксономических категориях, результаты лексикографических опросов и т. п. Основной блок словаря состоит из обобщения разных ботанических терминов (названий растений и их частей, а также других ботанических терминов) и визуального раздела (рисунков и терминов). В основном в словарь включены терминологические названия растений как на латышском, так и на английском, русском, немецком языках. В словарь не включена обширная синонимия названий растений (т. н. «народные названия») ни на латышском, ни на остальных сопоставляемых языках. Для точной идентификации растения и поиска его синонимичного названия можно использовать предоставленные латинские наименования. Для отбора терминов на латышском языке использовался основной список из примерно 500 названий растений для двуязычного словаря средних размеров, составленный в рамках промоционного исследования С. Свике и дополненный терминами из наиболее широко используемых учебников по ботанике. Для отбора терминов на латинском, английском, русском и немецком языках использовалась научная литература, многоязычные ботанические словари, толковые словари, энциклопедии и другая специальная литература, обобщенная в списке использованной литературы. Таксономические категории включенных в словарь названий растений указаны посредством цветной маркировки. Эквиваленты на латышском, русском и немецком языках имеют сноски на грамматические категории – род (сокращение на латинском языке). Отдельные названия растений сопровождаются фотографиями, но большинство названий растений имеет гиперссылку на изображение в свободной энциклопедии <i>Википедия</i>. За содержание внешних сайтов составители словаря ответственности не несут. Отдельные словарные статьи связаны с консолидированной версией словарей на сайте <i>www.tezaurs.lv</i>, поэтому они имеют гиперссылку на данный источник, где можно найти определения терминов. Для открытия внешних источников необходим доступ к Интернету. Модель словаря планируется обновлять раз в квартал, о чем пользователи будут информироваться, получая предложение скачать обновление. Термины в словаре можно находить путем вписывания в поисковое окно в единственном или множественном числе.
+\n\tНесмотря на тщательный труд над отбором и обобщением терминов, а также разработкой технического решения модели мобильного приложения, возможно, в словаре еще есть недостатки и недочеты. Все комментарии просим присылать руководителю проекта на эл. почту: <i>silga.svike@gmail.com</i>, за что заранее благодарим!
+\n\n\tВторое, дополненное издание словаря было разработано в конце 2018 года. Во втором этапе разработки словаря участвовали: <i>проф., д-р филол. наук </i>Ю. Балдунчикс (научный консультант), <i>бак. комп. наук </i>Н. Берзиньш (программист, магистрант ФИТ ВВШ), А. Лиуконен (переводчик, студент ФП ВВШ), <i>д.-р филол. наук</i> С. Свике (исследователь, руководитель проекта),<i> магистр комп. наук</i> К. Шкирманте (исследователь, программист), <i>магистр филол. наук</i> С. Озолиня (переводчик), Э. Жабалюнс (программист, студент ФИТ ВВШ). Консультант - <i>д-р агр. наук </i>А. Сталажс. Автор рисунков - <i>магистр  изобр. искусств </i>Э. Озолиня. В словаре собрано около 890 латышских терминов. Содержание и функциональные дополнения, сделанные в словаре, в основном описаны в разделе «Структура заглавного слово» (Šķirkļa uzbūve/Entry structure).
+
+\n\n\t© Вентспилсская высшая школа, 2019
+\n\t© С. Свике, 2019
+\n\t© Э. Озолиня, 2019
+
+</string>
+
+    <string name="titleAboutAppDE">Neues botanisches Wörterbuch.\nTermini Lettisch-Latein-Englisch-Russisch-Deutsch</string>
+    <string name="subtitleAboutAppDE">Zu diesem Wörterbuch</string>
+    <string name="textAboutAppDE">\tDas Modell eines neuen botanischen Wörterbuchs für die mobile Anwendung wurde Ende 2017 im Rahmen des Projekts "Entwicklung der wissenschaftlichen Tätigkeit an der Hochschule Ventspils" in Zusammenarbeit von Studenten und Forschern der Fakultäten für Übersetzungswissenschaften und für Informationstechnologie erstellt. Es ist dies der erste Versuch, ein solches Wörterbuchmodell in fünf Sprachen zu erstellen.
+        \n\tAn dem Projekt zur Erstellung des Wörterbuchs beteiligt waren <i>Prof. Dr. philol. </i>J. Baldunčiks (wissenschaftlicher Berater), <i>Bc. comp. </i>N. Bērziņš (Programmierer, Magistrant an der Fakultät für Informationswissenschaft der Hochschule Ventspils), <i>Mg. philol.</i> S. Ozoliņa (Übersetzerin), <i>Dr. philol. </i>S. Sviķe (Forscherin, Projektleiterin, Übersetzerin), <i>Mg. sc. comp.</i> K. Šķirmante (Forscherin), <i>Mg. philol.</i> S. Štekerhofa (Korrektorin) und I. Tīrmane (Übersetzerin, Studentin der Übersetzungswissenschaften an der Hochschule Ventspils). Als Berater fungierten <i>Dr. biol.</i> E. Vimba und Z. Purne, Leiterin der Pflanzenabteilung der Orangerie des Nationalen Botanischen Gartens. Die künstlerische Gestaltung und die Abbildungen stammen von <i>M.A.</i> E. Ēce.
+\n\tIn dem Wörterbuch sind die Bezeichnungen von Pflanzen und weitere botanische Termini in den Sprachen Lettisch, Latein, Englisch, Russisch und Deutsch enthalten. Das Wörterbuch richtet sich in erster Linie an Studenten der Übersetzungswissenschaften und an Übersetzer, d.h. an alle Personen, die für ihr Studium oder ihre berufliche Tätigkeit Übersetzungen von Termini in einem solchen Umfang benötigen und die Lettisch als Muttersprache haben oder über sehr gute Kenntnisse in dieser Sprache verfügen. Das Wörterbuch richtet sich aber auch an Schüler und ihre Lehrer in naturwissenschaftlichen Fächern, an Studenten der Naturwissenschaften und ihre Pädagogen sowie an Floristen, Gärtner, Pharmazeuten und sonstige Interessenten, die in diesen Bereichen tätig sind und Übersetzungen botanischer Termini benötigen. Das Wörterbuch kann auch von Interessenten mit einer anderen Muttersprache als Lettisch verwendet haben, doch ist die Schnittstelle für die mobile Anwendung grundsätzlich auf Lettisch.
+\n\tDie Einleitung des Wörterbuchs enthält ein Vorwort, ein Literaturverzeichnis und ein Verzeichnis der verwendeten Bezeichnungen. Die Einleitung soll um Hyperlinks zu einschlägigen spezifischen wissenschaftlichen Artikeln zur botanischen Terminologie, Veränderungen bei taxonomischen Kategorien, Ergebnissen lexikografischer Untersuchungen und dergleichen ergänzt werden. Den Hauptteil des Wörterbuchs bilden eine Sammlung unterschiedlicher botanischer Termini (Bezeichnungen von Pflanzen, Termini zu Pflanzenteilen und sonstige botanische Termini) sowie ein visueller Wörterbuchabschnitt (Abbildungen und Termini). In das Wörterbuch wurden vor allem terminologische Pflanzenbezeichnungen in den Sprachen Lettisch wie auch Englisch, Russisch und Deutsch aufgenommen. Das Wörterbuch enthält keine breite Synonymie von Pflanzenbezeichnungen (d.h. keine "volkstümlichen Bezeichnungen"), weder für das Lettische noch für die übrigen Sprachen. Für die genaue Identifizierung einer Pflanze und für die Suche nach Synonymen dienen die aufgeführten lateinischen Bezeichnungen. Zur Auswahl der lettischen Termini wurde das in der Dissertation von S. Sviķe erstellte Grundverzeichnis mit rund 500 Pflanzenbezeichnungen für ein mittelgroßes zweisprachiges Wörterbuch verwendet, das um Termini aus allgemeinen botanischen Lehrbüchern ergänzt wurde. Für die Auswahl der lateinischen, englischen, russischen und deutschen Termini wurden die wissenschaftliche Literatur, mehrsprachige botanische Wörterbücher, erklärende Wörterbücher, Enzyklopädien und sonstige spezielle Werke verwendet, die im Literaturverzeichnis aufgeführt sind. Die taxonomischen Kategorien der in dem Wörterbuch enthaltenen Pflanzenbezeichnungen sind farbig markiert. Für die lettischen, russischen und deutschen Äquivalente ist das Genus als grammatische Kategorie angegeben (in lateinischer Abkürzung). Bestimmten Pflanzenbezeichnungen wurden Fotografien beigefügt, doch verfügt der Großteil der Pflanzenbezeichnungen über einen Hyperlink zu einer Abbildung in der freien Enzyklopädie <i>Wikipedia</i>. Für den Inhalt der externen Links übernehmen die Schöpfer des Wörterbuchs keine Verantwortung. Bestimmte Positionen sind auf der Internetseite <i>www.tezaurs.lv</i> mit der konsolidierten Wörterbuchversion verbunden, und diese Positionen enthalten einen Hyperlink zu der Seite, auf der die Definitionen der Termini enthalten sind. Für das Öffnen der externen Links wird ein Zugang zum Internet benötigt. Das Wörterbuchmodell soll einmal im Quartal aktualisiert werden. Nutzer werden darüber informiert und erhalten eine Aufforderung zur Aktualisierung. Im Suchfenster können Wörter sowohl in der Singular- als auch in der Pluralform eingegeben werden, um die Suche im Wörterbuch zu starten.
+\n\tTrotz aller Sorgfalt bei der Auswahl und Sammlung der Termini wie auch bei der Erstellung der technischen Lösungen zur mobilen Anwendung können in dem Wörterbuch Unvollständigkeiten und Fehler nicht ausgeschlossen werden. Es ergeht daher die Bitte, der Projektleiterin sämtliche Anmerkungen per E-Mail an die folgende Adresse zu schicken: silga.svike@gmail.com. Hierfür bereits vielen Dank im Voraus!
+
+\n\n\tDie zweite, erweiterte Auflage des Wörterbuchs wurde Ende 2018 erstellt. Am Projekt beteiligt waren <i>Prof. Dr. philol. </i>J. Baldunčiks (wissenschaftlicher Berater), <i>Bc. comp. </i>N. Bērziņš (Programmierer, Magistrant der Fakultät für Informationswissenschaft der Hochschule Ventspils), A. Liukonens (Übersetzer, Student der Übersetzungswissenschaften an der Hochschule Ventspils), <i>Mg. philol.</i> S. Ozoliņa (Übersetzerin), <i>Dr. philol.</i> S. Sviķe (Forscherin, Projektleiterin), <i>Mg. sc. comp.</i> K. Šķirmante (Forscherin, Programmiererin), E. Žabaļūns (Programmierer, Student der Fakultät für Informationswissenschaft der Hochschule Ventspils). Berater - <i>Dr. agr.</i> A. Stalažs. Die künstlerischen Abbildungen stammen von <i>Mg. art.</i> E. Ozoliņa. Das Wörterbuch enthält ungefähr 890 lettischen Termini. Die inhaltlichen und funktionalen Ergänzungen im Wörterbuch werden hauptsächlich im Abschnitt "Aufbau des Wörterbuchartikels" (Šķirkļa uzbūve/Entry structure) beschrieben.
+
+
+\n\n\t© Hochschule Ventspils, 2019
+\n\t© S. Sviķe, 2019
+\n\t© E. Ozoliņa, 2019
+</string>
+
+    <string name="titleUserManualDE">Aufbau des Wörterbucheintrags</string>
+    <string name="subtitleUserManualDE"> </string>
+    <string name="textUserManualDE">Ein Wörterbucheintrag beinhaltet (kann beinhalten):
+
+<![CDATA[<br><br>1. Gesuchtes Stichwort oder Stichwörter (im Eingabefeld).
+<br>Das gesuchte Stichwort wird entsprechend farblich markiert, womit die taxonomischen Kategorien angezeigt werden. Erläuterungen befinden sich hinter der entsprechenden Farbe (im Quadrat).
+
+<br><br>2.Fremdsprachliche Entsprechung oder Entsprechungen. LA: Latein, DE: Deutsch, EN: Englisch, LV: Lettisch, RU: Russisch. Sprachcodes gemäß ISO 639-1.
+
+<br><br>3. Grammatische Angaben (Genus und Numerus) zu den Entsprechungen im Deutschen, Lettischen und Russischen. Femininum: <i>f<i>, Maskulinum: <i>m</i>, Neutrum: <i>n</i>, <i>Singular: Sg, Plural: Pl</i>.
+<br><br>Die lettischen Bezeichnungen der Pflanzengattungen sind im Plural angegeben; nach der Bezeichnung der Pflanzengattung wird das Genus angegeben, z. B. <i><b>aronijas</b> Pl, f</i>, f. Die lettischen Bezeichnungen der Pflanzenarten sind im Singular angegeben; nach der Bezeichnung der Pflanzenart wird das Genus angegeben, z. B. <i><b>purva skalbe</b> f</i>.
+<br>Bei den lettischen Pflanzenbezeichnungen können noch Erläuterungen in Klammern zugefügt worden sein, z. B. <i>pop.</i> (Lateinisch <i>popularis</i>) mit der Bedeutung „volkstümlich”: <i><b>ciklamenas</b> Pl, f; <b>Alpu vijolītes</b> (pop.) Pl, f.</i>
+<br>Bei deutschen und englischen Pflanzenbezeichnungen können auch Hinweise zum regionalen Gebrauch gegeben werden – in Klammern sind Sprachcodes gemäß ISO 3166-1 angegeben: (DE) – überwiegend in Deutschland, (AT) – in Österreich, (CH) – in der Schweiz, (US) – in den Vereinigten Staaten von Amerika und (GB) – im Vereinigten Königreich.
+
+<br><br>4. Link zur Abbildung und Beschreibung auf der Website <i>www.wikipedia.com</i> (WIKI) hauptsächlich in englischer Sprache (Online-Zugang).
+<br><br>5. Link zum vollständigen Wörterbucheintrag des gesuchten Stichwortes (Definition, Synonyme, Beispiele) auf der Website <i>www.tezaurs.lv</i> (Online-Zugang).
+<br><br>6. Von der Website <i>www.tezaurs.lv</i> automatisch erhaltene Definition (T*).
+<br><br>7. Kommentar oder Erläuterung.
+<br><br>8. Piktogramme: „Foto” – öffnet die Abbildung der gesuchten Pflanze; „Link” – damit wird die Ansicht vom Hauptteil des Wörterbuches auf den visuellen Teil („Bilder”) umgeschaltet und umgekehrt.
+
+
+<br><br><br><b>Suche
+
+<br><br>Einfache Suche </b>
+<br>Durch das Klicken auf „Suchen“ können mit Hilfe der einfachen Suche bestimmte Stichwörter gefunden werden. Die Suche der Stichwörter in lettischer Sprache ist möglich durch Eingabe des gesuchten Wortes im Singular und im Plural. Bei anderen Sprachen wird diese Funktion nicht angeboten.
+
+<br><br><b>Semantische Suche</b>
+<br>Wird die Funktion „Suchen (nur im Lateinischen)” („Meklēt (tikai latīniski)”/ “Search (only Latin)”) ausgewählt, kann in der Datenbank nur nach der lateinischen Bezeichnung gesucht werden. Das gesuchte Stichwort wird im semantischen Zusammenhang durch Angabe der taxonomischen Kategorien dargestellt, z. B. wird bei der Suche nach der Bezeichnung der Gattung <i><b>Rosa</i></b> mit Pfeilen dargestellt, dass das Wörterbuch zwei Arten dieser Gattung enthält – <i><b>Rosa rugosa</i></b> und <i><b>Rosa canina</i></b>.
+ ]]></string>
+
+
+    <string name="titleUserManualRU">Структура заглавного слова</string>
+    <string name="subtitleUserManualRU"> </string>
+    <string name="textUserManualRU">Заглавное слово состоит (может состоять) из следующих частей:
+
+<![CDATA[<br><br>1. Искомое слово или слова (в окошке ввода).
+<br>Искомое слово закрашивается в соответствующий цвет, указывающий на таксономическую категорию. Расшифровка категорий предоставляется ниже в виде цветных квадратов.
+
+<br><br>2. Эквивалент или эквиваленты на сопоставляемых в словаре языках. LA: латинский язык, DE: немецкий язык, EN: английский язык, LV: латышский язык, RU: русский язык. Двухбуквенные коды языков соответствуют стандарту ISO 639-1.
+
+<br><br>3. Грамматические сноски (род и число) эквивалентов на немецком, латышском и русском языках. Женский род: <i>f – femininum</i>, мужской род: <i>m – maskulinum</i>, средний род: <i>n – neutrum</i>, единственное число: <i>sg – singularis</i>, множественное число: <i>pl – pluralis</i>.
+
+<br><br>Род растений на латышском языке в словаре дается во множественном числе; за названием биологического рода указывается род грамматический (гендер), напр., <i><b>aronijas</b> pl, f</i>. Вид растений на латышском языке дается в единственном числе; за названием вида указывается гендер, напр.,<i><b>purva skalbe.</b> f</i>
+<br>Названия растений на латышском языке могут быть дополнены пояснениями в скобках, напр., маркировкой <i>pop.</i> (от LA <i>popularis</i>) со значением «широко известный в народе»: <i><b>ciklamenas</b> pl, f; <b>Alpu vijolītes</b> (pop.) pl, f.</i>
+<br>Названия растений на немецком и английском языках могут иметь ссылку на региональное использование путем указания в скобках двухбуквенного кода страны согласно стандарту ISO 3166-1: (DE) – в основном в Германии, (AT) – в Австрии, (CH) – Швейцарии, (US) – Америке и (GB) – Великобритании.
+
+<br><br>4. Ссылка на изображение или описание искомого слова в интернет-ресурсе <i>www.wikipedia.com</i> (WIKI), в основном на английском языке (доступ онлайн).
+
+<br><br>5. Ссылка на полную информацию об искомом слове (определение, синонимы, примеры) на консолидированном словарном сайте <i>www.tezaurs.lv</i> (доступ онлайн).
+
+<br><br>6. Автоматически заимствованное с сайта <i>www.tezaurs.lv</i> определение (T*).
+<br><br>7. Комментарий или пояснение.
+
+<br><br>8. Пиктограммы: «Фотография» (Fotogrāfija) открывает изображение искомого растения, а «Ссылка» (Saite) переносит с основной части словаря в визуальную – «Изображения» (Attēli) – и наоборот.
+
+<br><br><br><b>Поиск
+
+<br><br>Простой поиск</b>
+<br>При помощи простого поиска, кликнув на кнопку «Искать» (Meklēt), можно находить конкретные заглавные слова. Заглавные слова на латышском языке можно искать путем ввода искомого слова как в единственном числе, так и во множественном. Данная функция не действует на других сопоставляемых в словаре языках.
+
+<br><br><b>Семантический поиск</b>
+<br>Выбрав функцию «Искать (только на латыни)» (Meklēt (tikai latīniski)/Search (only Latin)), в базе данных можно находить растения только по их латинскому наименованию. Искомое заглавное слово отображается в семантической связи с указанием соответствующих таксономических категорий, напр., при поиске названия рода <i><b>Rosa</i></b> стрелочки укажут, что в словарь включены два вида этого рода – <i><b>Rosa rugosa</i></b> и <i><b>Rosa canina</i></b>.
+ ]]> </string>
+
+    <string name="titleUserManualEN">Entry structure</string>
+    <string name="subtitleUserManualEN"> </string>
+    <string name="textUserManualEN">An entry is formed (may be formed) by the following parts:
+
+<![CDATA[<br><br>1. A search word or words (input box).
+<br>The search word is highlighted with the corresponding colour that indicates the taxonomic category. Explanations are given after each colour (square).
+
+<br><br>2. An equivalent or equivalents in the contrasted languages. LA: Latin; DE: German; EN: English; LV: Latvian; RU: Russian. Two-letter language codes according to the ISO 639-1 standard.
+
+<br><br>3.Grammatical references (gender and number) for German, Latvian and Russian equivalents. Feminine gender: <i>f – femininum</i>; masculine gender: <i>m – maskulinum</i>, neuter: <i>n – neutrum</i>, singular: <i>sg – singularis</i>, plural: <i>pl – pluralis</i>.
+<br><br>The Latvian names of plant genus are given in plural; the gender is given after the genus name, e.g.<i><b>aronijas</b> pl, f</i>. The Latvian names of plant species are given in singular; the gender is given after the species name, e.g. <i><b>purva skalbe</b> f</i>
+<br>The Latvian names of plant species may have explanations added in parentheses, e.g. the label <i>pop</i>. (from Latin <i>popularis</i>) with the meaning “popularly known”: <i><b>ciklamenas</b> pl, f; <b>Alpu vijolītes</b> (pop.) pl, f.</i>
+<br>The German and English names of plant species may contain indications about regional use – two-letter country codes in accordance with the ISO 3166-1 standard are given in the parentheses: (DE) – mostly in Germany, (AT) –in Austria, (CH) – in Switzerland, (US) – in the United States and (GB) – in Great Britain.
+
+<br><br>4. A link to the image and description of the searched word on the Internet Website <i>www.wikipedia.com</i> (WIKI), mostly in English (online access).
+
+<br><br>5. A link to the full entry of the searched word (definition, synonyms, examples) on the consolidated dictionary site <i>www.tezaurs.lv</i> (online access).
+
+<br><br>6. The definition automatically retrieved from <i>www.tezaurs.lv</i> (T*).
+
+<br><br>7. A comment or an explanation.
+
+<br><br>8. Pictograms: “Photography” – opens the picture of the searched word; “Link” – switches from the basic section to the visual section of the dictionary (“Pictures”) and vice versa.
+
+
+<br><br><br><b>Search
+
+<br><br>Simple search</b>
+<br>By clicking “Search”, you can search for specific entry words via the simple search option. The entry words in Latvian can be searched by entering the search word in singular or plural. The function is not available for the other languages contrasted in the dictionary.
+
+<br><br><b>Semantic search</b>
+<br>By choosing the function “Search (only Latin)”, you can only search the Latin name in the database. The searched entry is viewed in a semantic relation indicating the corresponding taxonomic categories, e.g. when searching by genus name <i><b>Rosa</i></b>, arrows indicate that the dictionary contains two species of this genus, <i><b>Rosa rugosa</i></b> and <i><b>Rosa canina</i></b>.
+]]></string>
+
+    <string name="titleUserManualLV">Šķirkļa uzbūve</string>
+    <string name="subtitleUserManualLV"> </string>
+    <string name="textUserManualLV">Šķirkli veido (var veidot) šādas daļas:
+
+<![CDATA[<br><br>1. Meklētais vārds vai vārdi (ievades lodziņā).
+<br>Meklētais vārds tiek iekrāsots atbilstošā krāsā, kas norāda taksonomisko kategoriju. Paskaidrojumi norādīti aiz attiecīgās krāsas kvadrāta.
+        <br><br>2. Ekvivalents vai ekvivalenti vārdnīcā sastatītajās valodās. LA: latīņu valoda, DE: vācu valoda, EN: angļu valoda, LV: latviešu valoda, RU: krievu valoda. Valodu divburtu kodi saskaņā ar ISO 639-1 standartu.
+        <br><br>3. Gramatiskās norādes (dzimte un skaitlis) vācu, latviešu un krievu valodas ekvivalentiem. Sieviešu dzimte: <i>f – femininum</i>, vīriešu dzimte: <i>m – maskulinum</i>, nekatra dzimte: <i>n – neutrum</i>, vienskaitlis: <i>sg – singularis</i>, daudzskaitlis: <i>pl – pluralis</i>.
+<br><br><pre>Augu ģinšu latviskie nosaukumi vārdnīcā doti daudzskaitlī; aiz ģints nosaukuma norādīta dzimte, piem., <i><b>aronijas</b> pl, f</i>. Augu sugu latviskie nosaukumi doti vienskaitlī; aiz sugas nosaukuma norādīta dzimte, piem., <i><b>purva skalbe.</b> f</i>
+<br>Latviskajiem augu nosaukumiem iekavās var būt pievienoti paskaidrojumi, piem., marķējums <i>pop</i>. (no LA <i>popularis</i>) ar nozīmi „tautā plaši pazīstams”: <i><b>ciklamenas</b> pl, f; <b>Alpu vijolītes</b> (pop.) pl, f.</i>
+<br>Vāciskajiem un angliskajiem augu nosaukumiem var būt norādes par reģionālo lietojumu – iekavās doti valstu divburtu kodi saskaņā ar ISO 3166-1 standartu: (DE) – pārsvarā Vācijā, (AT) –Austrijā, (CH) – Šveicē, (US) – Amerikā un (GB) – Lielbritānijā.
+</pre>
+<br><br>4. Saite uz meklētā vārda attēlu un aprakstu interneta vietnē <i>www.wikipedia.com</i> (WIKI) galvenokārt angļu valodā (piekļuve tiešsaistē).
+
+<br><br>5. Saite uz meklētā vārda pilno šķirkļi (definīcija, sinonīmi, piemēri) vārdnīcu konsolidētajā vietnē <i>www.tezaurs.lv</i> (piekļuve tiešsaistē).
+
+<br><br>6. No vietnes <i>www.tezaurs.lv</i> automātiski izgūtā definīcija (T*).
+
+<br><br>7. Komentārs vai paskaidrojums.
+
+<br><br>8. Piktogrammas: „Fotogrāfija” – atver meklētā auga attēlu; „Saite” – pārslēdz skatu no vārdnīcas pamatdaļas uz vizuālo daļu („Attēli”) un otrādi.
+<br><br><br><b>Meklēšana
+
+<br><br>Vienkāršā meklēšana </b>
+<br>Ar vienkāršās meklēšanas palīdzību, nospiežot pogu „Meklēt”, var atrast konkrētu šķirkļa vārdu. Latviskos šķirkļa vārdus var meklēt, ievadot meklēto vārdu gan vienskaitlī, gan daudzskaitlī. Šāda funkcija netiek piedāvāta pārējām vārdnīcā sastatītajām valodām.
+
+<br><br><b>Semantiskā meklēšana</b>
+<br>Izvēloties funkciju „Meklēt (tikai latīniski)”, datubāzē iespējams meklēt tikai pēc latīniskā nosaukuma. Meklētais šķirklis tiek attēlots semantiskā saiknē, norādot atbilstošās taksonomiskās kategorijas, piem., meklējot pēc ģints nosaukuma <i><b>Rosa</i></b>, ar bultiņām tiek attēlots, ka vārdnīcā iekļautas divas šīs ģints sugas <i><b>Rosa rugosa</i></b> un <i><b>Rosa canina</i></b>.
+ ]]> </string>
+
+
+    <string name="publications">Publications</string>
+    <string-array name="publicationsWithLinks">
+        <item>Sviķe, S., 2018. A New Dictionary of Botanical Terms: Data Analysis of a Lexicographic Survey. Economics World. New York: David Publishing Company Journal. May-June 2018, 6 (3). 228–241. </item>
+        <item>http://www.davidpublisher.com/index.php/Home/Article/index?id=35063.html</item>
+        <item>Sviķe, S., 2017. A New Dictionary of Botanical Terms: an Insight into the Compilation Project of the Dictionary. Jeļena Titko (ed) Emerging Trends in Economics, Culture and Humanities (etECH2017). Conference Proceedings. Rīga: Ekonomikas un kultūras augstskola, 22–30.</item>
+        <item>https://www.augstskola.lv/upload/Conf_proceedings_2017.pdf</item>
+        <item>Stalažs, A., 2015. Asteru, miķelīšu, ziemasteru un dažu citu radniecīgo ģinšu sugu latviskie nosaukumi. Scripta Letonica 2(1). Dobele: RPD Science. 24–30.</item>
+        <item>http://www.rpd-science.org/ScrLet/V002/Scripta_Letonica_2-1_2015_Art_4.pdf</item>
+    </string-array>
+    <string name="literature">Sources Used</string>
+    <string name="internet">Internet Resources</string>
+</resources>

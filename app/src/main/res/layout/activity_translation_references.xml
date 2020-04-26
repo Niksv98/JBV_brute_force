@@ -1,0 +1,1048 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.example.nils.botaniskietermini.TranslationReferences">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/referencesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/literature"
+            android:textColor="@color/aboutAppTextColor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TableLayout
+            android:id="@+id/resourcesTable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/referencesTitle"
+            android:layout_marginLeft="3dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="3dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            app:layout_constraintHorizontal_bias="0.0">
+
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Aguraiuja u. c. 1991"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Aguraiuja, R., Tome, M., Pots, E. Bioloģija. Botānika 6.–7. klasei. Red. V. Māzings; tulk. Z. Sprīvulis. Rīga: Zvaigzne, 1991."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Aizpure 2000"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Aizpure, A. Bioloģija. Botānika 7. klasei: eksper. māc. grām. Rīga: Zvaigzne ABC, 2000."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Aizpure 2008"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Aizpure, A. Bioloģija. Botānika 7. klasei : māc. grām. Rīga: Zvaigzne ABC, 2008."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="BW 2000"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Schubert, R., Wagner, G. Botanisches Wörterbuch. 12. Aufl. Stuttgart: Eugen Ulmer, 2000."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Dolacis 1998"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Dolacis, J. Mežtehnikas, mežsaimniecības un kokrūpniecības terminu vārdnīca. Rīga: Antēra, 1998."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Dornseiff 2004"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Dornseiff, F. Der deutsche Wortschatz nach Sachgruppen. 8. völlig neu bearb. Aufl. von Uwe Quasthoff. Berlin; New York: de Gruyter, 2004."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="ELSEV 2002"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Macura, P. Russian-English Elsevier's Dictionary of Botany. 2nd revised edition. Amsterdam etc.: Elsevier Science, 2002."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="GalBV 1950"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Galenieks, P. Botaniskā vārdnīca. Rīga: Latvijas Valsts izdevniecība, 1950."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Galenieks 1945"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Galenieks, P. Botanika: ar 144 zīmējumiem tekstā. 5. izd. Rīga: Zinātnisko rakstu apgāds, 1945."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="HandbF 2015"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Haake, K.-M. Handbuch der Floristik, 2.überarb. Aufl. Ratingen: BLOOM'S GmbH, 2015."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Langenfelds u. c. 1973"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Langenfelds, V., Ozoliņa, E., Ābele, G. Augstāko augu sistemātika. Rīga: Zvaigzne, 1973."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="LD6 1998"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Latvijas daba. 6. sēj. Atb. red. G. Kavacs. Rīga: Preses nams, 1998."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="LVAN 2003"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Ēdelmane, I., Ozola, Ā. Latviešu valodas augu nosaukumi. Rīga: Augsburgas Institūts, 2003."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="MNT 2007"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Meža nozares termini: Eiropas Savienības un citos starptautiskos tiesību aktos lietoto meža nozares terminu vārdnīca. Angļu-latviešu-angļu / Forest sector terminology. Glossary of forest sector terminology used in the European Union and other international legislation. English-Latvian-English. Rīga: Tulkošanas un terminoloģijas centrs: Madris, 2007."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Nagle, Gribuste 2000"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Nagle, Ē., Gribuste, R. Bioloģija 7. klasei. 1. izd. Lielvārde: Lielvārds, 2000."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="PDE 2007"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Kavacs, G. Populārā dabas enciklopēdija. Rīga: Jumava, 2007."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Piterāns u. c. 1975"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Piterāns, A., Vimba, E., Vulfa, L. Zemāko augu sistemātika. Rīga: Zvaigzne, 1975."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Priedītis 2009"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Priedītis, N. Augu ģeogrāfija un daudzveidība. Rīga: Zvaigzne ABC, 2009."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Seybold 2005"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Seybold, S. Die wissenschaftlichen Namen der Pflanzen und was sie bedeuten. 2. korr. Aufl. Stuttgart: Eugen Ulmer Verlag, 2005."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="SV 1996"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Svešvārdu vārdnīca. Red. D. Guļevska. Rīga: Norden, 1996."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="SV 1999"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Baldunčiks, J., Pokrotniece, K. Svešvārdu vārdnīca. Rīga: Jumava, 1999."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Tabaka 2001"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Tabaka, L. Latvijas flora un veģetācija : Zemgales ģeobotāniskais rajons. Rīga: Latvijas Universitāte, 2001."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Term3 1960"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Augu aizsardzība: zinātniskā un tehniskā terminoloģija. Red. J. Saveļjeva, M. Zumberga. Rīga: LPSR ZA izdevniecība, 1960."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Term9 1973"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Agronomijas terminu vārdnīca. Sast. aut. kol. K. Bamberga vad. Rīga: Zinātne, 1973."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Term14 1981"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Ekonomiskās ģeogrāfijas terminu vārdnīca. Red. A. Andrejeva. Rīga: Galvenā enciklopēdiju redakcija, 1981."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Welle 1994"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Welle, E. F. Kleines Repetitorium der Botanik. 10. Aufl. Koeln: [o. v.], 1994."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Zander 2008"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Erhardt, W., Götz, E., Bödeker, N. u. a. Zander. Handwörterbuch der Pflanzennamen. 18. Aufl. Stuttgart: Eugen Ulmer, 2008."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Zander 2014"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Erhardt, W., Götz, E., Bödeker, N. u. a. Zander: Handwörterbuch der Pflanzennamen, 19., akt. Aufl. Stuttgart: Eugen Ulmer Verlag, 2014."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Балашев 1970"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Словарь полезных растений на двадцати европейских языках. Pед. Л. Л. Балашев. Москва: Наука, 1970."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="БЭС 1986"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Биологический энциклопедический словарь. Гл. ред. М. С. Гиляров, 2-е изд., испр. Москва: Сов. Энциклопедия, 1986."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Давыдов 2013"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Давыдов, Н. Н. Ботанический словарь. Русско-английско-немецко-французско-латинский. Москва: Книга по Требованию, 2013."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Киселевский 1967"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Латино-русско-белорусский ботанический словарь. A. И. Киселевский. Минск: Наука и техника, 1967."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Меркулова 1967"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Меркулова, В. А. Очерки по русской народной номенклатуре растений. Москва: Наука, 1967."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Славик 1982"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Славик, Б. Растения полей и лесов. Прага: Артия, 1982."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+
+        </TableLayout>
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/internetResources"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/internet"
+            android:textColor="@color/aboutAppTextColor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/resourcesTable" />
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/internetResources"
+            android:layout_marginLeft="3dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="3dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            app:layout_constraintHorizontal_bias="0.0">
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Wacad"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="https://dic.academic.ru/"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Wakadterm"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="www.termini.lza.lv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Wbeaplanet"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="http://beaplanet.ru/"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Wbio"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="http://www.biology-online.org/dictionary/Main_Page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Wbioege"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="http://bioege.edu.ru/botany.html"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Wbot"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="http://botanika.su/"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Wbot 1984"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="http://www.cnshb.ru/AKDiL/0017/default.shtm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Wcol"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="https://www.collinsdictionary.com/dictionary/english"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Wdic"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="http://www.dictionary.com/"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Wduden"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="www.duden.de"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Wenc"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="http://www.encyclopedia.com/"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Weurot"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="www.eurotermbank.com "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Whimbio"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="http://him-bio.ru/"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Wi"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="https://en.wiktionary.org/wiki/Wiktionary:Main_Page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Wkor"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="https://www.korrekturen.de/wortliste/staengel.shtml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Wld"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="http://www.latvijasdaba.lv/"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Wlet"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="https://www.letonika.lv/"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Wlevr"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="http://www.online-lernen.levrai.de/index.htm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Wmob"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="http://www.mobot.org/mobot/latindict/introduction.shtml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Woxfordlat"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="https://lv.oxforddictionaries.com/"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Woxfordeng"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="https://en.oxforddictionaries.com/"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Wrob"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="http://www.robinsonlibrary.com/index.htm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Wtez"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="www.tezaurs.lv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Wtilde"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="https://term.tilde.com/"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="Wuzd"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="www.uzdevumi.lv "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+            <TableRow
+                android:paddingTop="@dimen/paddingReferenceTop">
+                <TextView android:layout_column="1"
+                    android:text="WУшаков 1935"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/paddingReference"
+                    android:textStyle="bold"
+                    android:textColor="@color/referenceName"/>
+                <TextView android:layout_column="2"
+                    android:text="Толковый словарь русского языка. Под ред. Д. Н. Ушакова. Москва: Гос. ин-т &quot;Сов. энцикл.&quot; ОГИЗ; Гос. изд-во иностр. и нац. слов., 1935-1940. (4 т.) Pieejams: https://biblioclub.ru/?page=dict&amp;dict_id=117"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="1"
+                    android:textColor="@color/referenceDescription" />
+            </TableRow>
+        </TableLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

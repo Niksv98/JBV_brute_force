@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relLayFlower"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/flowerImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/zieds_punktinji_27_11" />
+
+    <Button
+        android:id="@+id/pedicelButton"
+        android:tag="pedicel"
+        android:layout_width="@dimen/flowerButtonDiameter"
+        android:layout_height="@dimen/flowerButtonDiameter"
+        android:background="@drawable/roundedbutton"
+        android:onClick="buttonZiedkatsClicked" />
+    <Button
+        android:id="@+id/receptacleButton"
+        android:tag="receptacle"
+        android:layout_width="@dimen/flowerButtonDiameter"
+        android:layout_height="@dimen/flowerButtonDiameter"
+        android:background="@drawable/roundedbutton"
+        android:onClick="buttonZiedgultneClicked" />
+    <Button
+        android:id="@+id/sepalButton"
+        android:tag="sepal"
+        android:layout_width="@dimen/flowerButtonDiameter"
+        android:layout_height="@dimen/flowerButtonDiameter"
+        android:background="@drawable/roundedbutton"
+        android:onClick="buttonKauslapaClicked" />
+    <Button
+        android:id="@+id/petalButton"
+        android:tag="petal"
+        android:layout_width="@dimen/flowerButtonDiameter"
+        android:layout_height="@dimen/flowerButtonDiameter"
+        android:background="@drawable/roundedbutton"
+        android:onClick="buttonVainaglapaClicked" />
+    <Button
+        android:id="@+id/perianthButton"
+        android:tag="perianth"
+        android:layout_width="@dimen/flowerButtonDiameter"
+        android:layout_height="@dimen/flowerButtonDiameter"
+        android:background="@drawable/roundedbutton"
+        android:onClick="buttonApziednisClicked" />
+    <Button
+        android:id="@+id/stamenButton"
+        android:tag="stamen"
+        android:layout_width="@dimen/flowerButtonDiameter"
+        android:layout_height="@dimen/flowerButtonDiameter"
+        android:background="@drawable/roundedbutton"
+        android:onClick="buttonPuteksnlapaClicked" />
+    <Button
+        android:id="@+id/antherButton"
+        android:tag="anther"
+        android:layout_width="@dimen/flowerButtonDiameter"
+        android:layout_height="@dimen/flowerButtonDiameter"
+        android:background="@drawable/roundedbutton"
+        android:onClick="buttonPuteksnicaClicked" />
+    <Button
+        android:id="@+id/filamentButton"
+        android:tag="filament"
+        android:layout_width="@dimen/flowerButtonDiameter"
+        android:layout_height="@dimen/flowerButtonDiameter"
+        android:background="@drawable/roundedbutton"
+        android:onClick="buttonPuteksnlapasKatinsClicked" />
+    <Button
+        android:id="@+id/pistilButton"
+        android:tag="pistil"
+        android:layout_width="@dimen/flowerButtonDiameter"
+        android:layout_height="@dimen/flowerButtonDiameter"
+        android:background="@drawable/roundedbutton"
+        android:onClick="buttonAuglenicaClicked" />
+    <Button
+        android:id="@+id/stigmaButton"
+        android:tag="stigma"
+        android:layout_width="@dimen/flowerButtonDiameter"
+        android:layout_height="@dimen/flowerButtonDiameter"
+        android:background="@drawable/roundedbutton"
+        android:onClick="buttonDriksnaClicked" />
+    <Button
+        android:id="@+id/styleButton"
+        android:tag="style"
+        android:layout_width="@dimen/flowerButtonDiameter"
+        android:layout_height="@dimen/flowerButtonDiameter"
+        android:background="@drawable/roundedbutton"
+        android:onClick="buttonIrbulisClicked" />
+    <Button
+        android:id="@+id/ovaryButton"
+        android:tag="ovary"
+        android:layout_width="@dimen/flowerButtonDiameter"
+        android:layout_height="@dimen/flowerButtonDiameter"
+        android:background="@drawable/roundedbutton"
+        android:onClick="buttonSeklotneClicked" />
+    <Button
+        android:id="@+id/ovuleButton"
+        android:tag="ovule"
+        android:layout_width="@dimen/flowerButtonDiameter"
+        android:layout_height="@dimen/flowerButtonDiameter"
+        android:background="@drawable/roundedbutton"
+        android:onClick="buttonSeklaizmetnisClicked" />
+
+
+</RelativeLayout>

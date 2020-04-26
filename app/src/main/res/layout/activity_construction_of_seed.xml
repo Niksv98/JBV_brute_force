@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relLaySeed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/seedImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/pupinja"/>
+
+    <Button
+        android:id="@+id/seedButton1"
+        android:layout_width="@dimen/seedButtonDiameter"
+        android:layout_height="@dimen/seedButtonDiameter"
+        android:background="@drawable/roundedbutton"
+        android:tag="seed leaf, cotyledon"
+        android:onClick="seedButton1Clicked"/>
+
+    <Button
+        android:id="@+id/seedButton2"
+        android:layout_width="@dimen/seedButtonDiameter"
+        android:layout_height="@dimen/seedButtonDiameter"
+        android:background="@drawable/roundedbutton"
+        android:tag="hypocotyl"
+        android:onClick="seedButton2Clicked"/>
+
+    <Button
+        android:id="@+id/seedButton3"
+        android:layout_width="@dimen/seedButtonDiameter"
+        android:layout_height="@dimen/seedButtonDiameter"
+        android:background="@drawable/roundedbutton"
+        android:tag="radicle"
+        android:onClick="seedButton3Clicked"/>
+
+    <Button
+        android:id="@+id/seedButton4"
+        android:layout_width="@dimen/seedButtonDiameter"
+        android:layout_height="@dimen/seedButtonDiameter"
+        android:background="@drawable/roundedbutton"
+        android:tag="endosperm"
+        android:onClick="seedButton4Clicked"/>
+
+    <Button
+        android:id="@+id/seedButton5"
+        android:layout_width="@dimen/seedButtonDiameter"
+        android:layout_height="@dimen/seedButtonDiameter"
+        android:background="@drawable/roundedbutton"
+        android:tag="seed coat"
+        android:onClick="seedButton5Clicked"/>
+
+
+</RelativeLayout>

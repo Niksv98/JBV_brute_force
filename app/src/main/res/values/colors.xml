@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#154904</color>
+    <color name="colorPrimaryDark">#073603</color>
+    <color name="colorAccent">#0b5605</color>
+    <color name="translationsColor">#000000</color>
+    <color name="genusColor">#048902</color>
+    <color name="subgenusColor">#FFFF00</color>
+    <color name="spieciesColor">#2accde</color>
+    <color name="subspieciesColor">#04128c</color>
+    <color name="varietyColor">#e98215</color>
+    <color name="hybridColor">#e9157b</color>
+    <color name="formColor">#b95f49</color>
+    <color name="breedGroupColor">#ed2f45</color>
+    <color name="red">#ff0000</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="background">#ece972</color>
+    <color name="backgroundInfoWindow">#75e6e262</color>
+    <color name="selectedTabText">#ece972</color>
+    <color name="tabText">#bcbb82</color>
+    <color name="roundedButtonBackground">#0b5605</color>
+    <color name="tableCellBorder">#000000</color>
+    <color name="aboutAppTextColor">#000000</color>
+    <color name="referenceName">#1b201a</color>
+    <color name="referenceDescription">#333932</color>
+
+    <array name="legendsColors">
+        <item>@color/genusColor</item>
+        <item>@color/subgenusColor</item>
+        <item>@color/spieciesColor</item>
+        <item>@color/subspieciesColor</item>
+        <item>@color/varietyColor</item>
+        <item>@color/formColor</item>
+        <item>@color/hybridColor</item>
+    </array>
+</resources>

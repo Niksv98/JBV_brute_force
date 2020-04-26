@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relLayRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/rootImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/sakne_12_10"/>
+
+    <Button
+        android:id="@+id/rootButton1"
+        android:layout_width="@dimen/leafButtonDiameter"
+        android:layout_height="@dimen/leafButtonDiameter"
+        android:background="@drawable/roundedbutton"
+        android:tag="lateral root, secondary root"
+        android:onClick="rootButton1Clicked"/>
+    <Button
+        android:id="@+id/rootButton2"
+        android:layout_width="@dimen/leafButtonDiameter"
+        android:layout_height="@dimen/leafButtonDiameter"
+        android:background="@drawable/roundedbutton"
+        android:tag="major root, tap root, primary root"
+        android:onClick="rootButton2Clicked"/>
+    <Button
+        android:id="@+id/rootButton3"
+        android:layout_width="@dimen/leafButtonDiameter"
+        android:layout_height="@dimen/leafButtonDiameter"
+        android:background="@drawable/roundedbutton"
+        android:tag="root hair"
+        android:onClick="rootButton3Clicked"/>
+    <Button
+        android:id="@+id/rootButton4"
+        android:layout_width="@dimen/leafButtonDiameter"
+        android:layout_height="@dimen/leafButtonDiameter"
+        android:background="@drawable/roundedbutton"
+        android:tag="root cap"
+        android:onClick="rootButton4Clicked"/>
+
+</RelativeLayout>
