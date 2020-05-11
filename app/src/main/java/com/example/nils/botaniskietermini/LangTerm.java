@@ -1,6 +1,6 @@
 package com.example.nils.botaniskietermini;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 public class LangTerm implements Comparable {
 

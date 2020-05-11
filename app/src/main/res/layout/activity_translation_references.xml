@@ -8,7 +8,7 @@
     android:background="@color/background"
     tools:context="com.example.nils.botaniskietermini.TranslationReferences">
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -1044,5 +1044,5 @@
             </TableRow>
         </TableLayout>
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

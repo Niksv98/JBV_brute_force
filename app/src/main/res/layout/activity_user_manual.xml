@@ -7,7 +7,7 @@
     android:background="@color/background"
     android:orientation="vertical">
 
-    <android.support.design.widget.TabLayout
+    <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tabManualLayout"
@@ -16,12 +16,12 @@
         app:tabSelectedTextColor="@color/selectedTabText"
         app:tabIndicatorColor="@color/selectedTabText">
 
-    </android.support.design.widget.TabLayout>
+    </com.google.android.material.tabs.TabLayout>
 
-    <android.support.v4.view.ViewPager
+    <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/manualTabs">
 
-    </android.support.v4.view.ViewPager>
+    </androidx.viewpager.widget.ViewPager>
 </LinearLayout>

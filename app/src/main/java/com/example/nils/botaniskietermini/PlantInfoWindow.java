@@ -1,11 +1,10 @@
 package com.example.nils.botaniskietermini;
 
 import android.content.Intent;
-import android.opengl.Visibility;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;

@@ -1,39 +1,32 @@
 package com.example.nils.botaniskietermini;
 
-import android.annotation.TargetApi;
 import android.content.Context;
-import android.content.pm.ActivityInfo;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.ColorFilter;
 import android.graphics.Paint;
 import android.graphics.PixelFormat;
 import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.constraint.ConstraintLayout;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
+
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.GridLayout;
 import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class SemanticSearch extends AppCompatActivity {
 

@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/JBV.iml" filepath="$PROJECT_DIR$/JBV.iml" group="JBV" />
+      <module fileurl="file://$PROJECT_DIR$/app/JBV-app.iml" filepath="$PROJECT_DIR$/app/JBV-app.iml" group="JBV/app" />
       <module fileurl="file://$PROJECT_DIR$/JBV_II-master.iml" filepath="$PROJECT_DIR$/JBV_II-master.iml" group="JBV_II-master" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="JBV_II-master/app" />
     </modules>

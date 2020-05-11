@@ -3,16 +3,12 @@ package com.example.nils.botaniskietermini;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
-import android.graphics.Typeface;
-import android.net.LinkAddress;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.text.SpannableString;
-import android.text.Spanned;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.text.method.LinkMovementMethod;
 import android.text.util.Linkify;
 import android.util.TypedValue;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;

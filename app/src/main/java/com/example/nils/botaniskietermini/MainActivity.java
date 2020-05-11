@@ -1,6 +1,5 @@
 package com.example.nils.botaniskietermini;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -9,8 +8,8 @@ import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.method.LinkMovementMethod;
@@ -18,7 +17,6 @@ import android.text.style.BackgroundColorSpan;
 import android.text.style.ClickableSpan;
 import android.text.style.StyleSpan;
 import android.text.util.Linkify;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.Menu;
@@ -40,18 +38,11 @@ import android.widget.Toast;
 //import com.chaquo.python.Python;
 //import com.chaquo.python.android.AndroidPlatform;
 
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Locale;
-import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -155,7 +146,11 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException ex){
             ex.printStackTrace();
         }
-        spellObj = new Spelling(fileText);
+        try {
+            spellObj = new Spelling(fileText);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     // paredzets datu pievienosanai (netiek izmantots)
@@ -170,12 +165,21 @@ public class MainActivity extends AppCompatActivity {
     }
     public void suggestButton1Clicked(View view){
         searchTranslation(suggest1.getText().toString(), false);
+        suggest1.setVisibility(View.INVISIBLE);
+        suggest2.setVisibility(View.INVISIBLE);
+        suggest3.setVisibility(View.INVISIBLE);
     }
     public void suggestButton2Clicked(View view){
         searchTranslation(suggest2.getText().toString(), false);
+        suggest1.setVisibility(View.INVISIBLE);
+        suggest2.setVisibility(View.INVISIBLE);
+        suggest3.setVisibility(View.INVISIBLE);
     }
     public void suggestButton3Clicked(View view){
         searchTranslation(suggest3.getText().toString(), false);
+        suggest1.setVisibility(View.INVISIBLE);
+        suggest2.setVisibility(View.INVISIBLE);
+        suggest3.setVisibility(View.INVISIBLE);
     }
 
     private void searchLanguageButton(View view){
