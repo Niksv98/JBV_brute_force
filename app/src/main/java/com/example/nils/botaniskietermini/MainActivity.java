@@ -33,11 +33,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
-//import com.chaquo.python.PyObject;
-//import com.chaquo.python.Python;
-//import com.chaquo.python.android.AndroidPlatform;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Field;
@@ -806,7 +801,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
      public void SwitchLanguage(){
          updateCurrentContent(true);
 
@@ -820,10 +814,5 @@ public class MainActivity extends AppCompatActivity {
          pict.setVisibility(View.INVISIBLE);
          //isLatvian = (isLatvian)? false : true;
     }
-
-
-
-
-
 
 }
