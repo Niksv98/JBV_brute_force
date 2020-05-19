@@ -21,14 +21,12 @@ class Spelling {
 
         wordArray = text.split(" ");
         wordCount = wordArray.length;
-
         wordList = Arrays.asList(wordArray);
 
         for(String word : wordList){
             double number = (Double)(Collections.frequency(wordList, word)/wordCount);
             dictionary.put(word, number);
         }
-
     }
 
     private final ArrayList<String> edits(String word) {
@@ -82,21 +80,4 @@ class Spelling {
 
         return tempList;
     }
-
-    // public static void main(String[] args) throws IOException {
-    //     String file = "termini.txt";
-
-    //     File f = new File(file);
-    //     FileReader in = new FileReader(f);
-    //     char[] buffer = new char[(int)f.length()];
-    //     in.read(buffer);
-
-    //     String text = new String(buffer);
-    //     text.toLowerCase();
-    //     in.close();
-
-    //     Spelling spellObj = new Spelling(text);
-
-    //     System.out.println(spellObj.correct("lepa"));
-    // }
 }

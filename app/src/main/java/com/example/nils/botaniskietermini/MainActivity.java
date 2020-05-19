@@ -17,6 +17,7 @@ import android.text.style.BackgroundColorSpan;
 import android.text.style.ClickableSpan;
 import android.text.style.StyleSpan;
 import android.text.util.Linkify;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.Menu;
@@ -65,15 +66,15 @@ public class MainActivity extends AppCompatActivity {
     //TODO so var nomainit pie insatlacijas
     public static boolean isLatvian = true;
 
-    public Spelling spellObj;
+    Spelling spellObj;
     String fileText;
+    ArrayList<String> results = new ArrayList<>();
+    long start;
+    long end;
 
     Button suggest1;
     Button suggest2;
     Button suggest3;
-
-    public MainActivity() throws IOException {
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -158,29 +159,31 @@ public class MainActivity extends AppCompatActivity {
     public void searchButtonClicked(View view){
         searchLanguageButton(view);
     }
-    public void suggestButton1Clicked(View view){
-        searchTranslation(suggest1.getText().toString(), false);
-        suggest1.setVisibility(View.INVISIBLE);
-        suggest2.setVisibility(View.INVISIBLE);
-        suggest3.setVisibility(View.INVISIBLE);
-    }
-    public void suggestButton2Clicked(View view){
-        searchTranslation(suggest2.getText().toString(), false);
-        suggest1.setVisibility(View.INVISIBLE);
-        suggest2.setVisibility(View.INVISIBLE);
-        suggest3.setVisibility(View.INVISIBLE);
-    }
-    public void suggestButton3Clicked(View view){
-        searchTranslation(suggest3.getText().toString(), false);
+
+    public void hideSuggestions(){
         suggest1.setVisibility(View.INVISIBLE);
         suggest2.setVisibility(View.INVISIBLE);
         suggest3.setVisibility(View.INVISIBLE);
     }
 
+    public void suggestButton1Clicked(View view){
+        searchTranslation(suggest1.getText().toString(), false);
+        hideSuggestions();
+        searchTextField.setText("");
+    }
+    public void suggestButton2Clicked(View view){
+        searchTranslation(suggest2.getText().toString(), false);
+        hideSuggestions();
+        searchTextField.setText("");
+    }
+    public void suggestButton3Clicked(View view){
+        searchTranslation(suggest3.getText().toString(), false);
+        hideSuggestions();
+        searchTextField.setText("");
+    }
+
     private void searchLanguageButton(View view){
-        suggest1.setVisibility(View.INVISIBLE);
-        suggest2.setVisibility(View.INVISIBLE);
-        suggest3.setVisibility(View.INVISIBLE);
+        hideSuggestions();
 
         final ImageView ZoomImages = (ImageView) findViewById(R.id.image2);
         ZoomImages.setVisibility(View.INVISIBLE);
@@ -579,15 +582,20 @@ public class MainActivity extends AppCompatActivity {
                     else {
                         Toast.makeText(this, getResources().getText(R.string.ToastNotInDB), Toast.LENGTH_SHORT).show();
 
-                        //Python block
-//
-//                        Python py = Python.getInstance();
-//                        PyObject pyf = py.getModule("spell");   //here you put the python script name
-//                        PyObject obj = pyf.callAttr("test",search);    //here you put the function definition name
-//                        PyObject obj2 = pyf.callAttr("test(2)");
-//                        PyObject obj3 = pyf.callAttr("test(3)");
+                        //Spell correction
 
-                        ArrayList<String> results = spellObj.correct(search);
+                        results.clear();
+
+                        start = System.currentTimeMillis();
+                        results = spellObj.correct(search);
+                        end = System.currentTimeMillis();
+
+                        float search_time = (end - start) / 1000F;
+                        String message = "Search lasted for " + search_time + " seconds";
+
+                        Log.d("SEARCH_INFO", message);
+
+                        Log.d("SEARCH_INFO", results.toString());
 
                         if(results.size() > 0){
                             suggest1.setText(results.get(0));
@@ -606,15 +614,20 @@ public class MainActivity extends AppCompatActivity {
                 else {
                     Toast.makeText(this, getResources().getText(R.string.ToastNotInDB), Toast.LENGTH_SHORT).show();
 
-                    //Python block
-//
-//                    Python py = Python.getInstance();
-//                    PyObject pyf = py.getModule("spell");   //here you put the python script name
-//                    PyObject obj = pyf.callAttr("test",search);    //here you put the function definition name
-//                    PyObject obj2 = pyf.callAttr("test(2)");
-//                    PyObject obj3 = pyf.callAttr("test(3)");
+                    //Spell correction
 
-                    ArrayList<String> results = spellObj.correct(search);
+                    results.clear();
+
+                    start = System.currentTimeMillis();
+                    results = spellObj.correct(search);
+                    end = System.currentTimeMillis();
+
+                    float search_time = (end - start) / 1000F;
+                    String message = "Search lasted for " + search_time + " seconds";
+
+                    Log.d("SEARCH_INFO", message);
+
+                    Log.d("SEARCH_INFO", results.toString());
 
                     if(results.size() > 0){
                         suggest1.setText(results.get(0));
