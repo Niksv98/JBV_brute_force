@@ -1,6 +1,9 @@
 package com.example.nils.botaniskietermini;
 
+<<<<<<< HEAD
 import java.io.*;
+=======
+>>>>>>> not_finished
 import java.util.*;
 
 class Spelling {
@@ -9,7 +12,6 @@ class Spelling {
 
     List<Character> charList = new ArrayList<Character>();
     String charString = "aābcčdeēfgģhiījkķlļmnņoprsštuūvzžwxyqбвгдёжзийлпуфхцчшщъыьэюяäöüß";
-    String[] wordArray;
     List<String> wordList;
     double wordCount;
 
@@ -19,9 +21,11 @@ class Spelling {
             charList.add(c);
         }
 
-        wordArray = text.split(" ");
-        wordCount = wordArray.length;
-        wordList = Arrays.asList(wordArray);
+        text.toLowerCase();
+
+        wordList = Arrays.asList(text.split(" "));
+
+        wordCount = wordList.size();
 
         for(String word : wordList){
             double number = (Double)(Collections.frequency(wordList, word)/wordCount);
@@ -47,6 +51,7 @@ class Spelling {
     public final ArrayList<String> correct(String word) {
         word.toLowerCase();
         ArrayList<String> list = edits(word);
+<<<<<<< HEAD
         Map<String, Double> candidates = new HashMap<String, Double>();
         ArrayList<String> tempList = new ArrayList<String>();
         Map<Double, String> tempMap = new HashMap<Double, String>();
@@ -56,15 +61,30 @@ class Spelling {
                 candidates.put(s, dictionary.get(s));
             for (String w : edits(s))
                 if (dictionary.containsKey(w))
+=======
+        Map<String, Double> candidates = new HashMap<>();
+        ValueComparator bvc = new ValueComparator(candidates);
+        TreeMap<String, Double> sorted_map = new TreeMap<String, Double>(bvc);
+        ArrayList<String> tempList = new ArrayList<>();
+        ArrayList<String> result = new ArrayList<>();
+
+        for(String s : list){
+            if(dictionary.containsKey(s))
+                candidates.put(s, dictionary.get(s));
+            for(String w : edits(s))
+                if(dictionary.containsKey(w))
+>>>>>>> not_finished
                     candidates.put(w, dictionary.get(w));
         }
 
-        if(candidates.size() > 0) {
-            for(String i : candidates.keySet()){
-                tempMap.put(candidates.get(i), i);
-            }
-            if(candidates.size() > 3){
+        sorted_map.putAll(candidates);
+        tempList.addAll(sorted_map.keySet());
+
+        if(tempList.size() > 0) {
+
+            if(tempList.size() > 3){
                 for (int i = 0; i < 3; i++) {
+<<<<<<< HEAD
                     tempList.add(tempMap.get(Collections.max(candidates.values())));
                     candidates.remove(tempMap.get(Collections.max(candidates.values())));
                 }
@@ -79,5 +99,19 @@ class Spelling {
         }
 
         return tempList;
+=======
+                    result.add(tempList.get(i));
+                }
+                return result;
+            }
+            else{
+                for(String a : tempList){
+                    result.add(a);
+                }
+                return result;
+            }
+        }
+        return result;
+>>>>>>> not_finished
     }
 }
