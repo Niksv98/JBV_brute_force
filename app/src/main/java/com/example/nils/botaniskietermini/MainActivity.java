@@ -38,6 +38,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
@@ -69,6 +71,9 @@ public class MainActivity extends AppCompatActivity {
     Spelling spellObj;
     String fileText;
     ArrayList<String> results = new ArrayList<>();
+    String wordToCorrect;
+    List<String> searchWords = new ArrayList<>();
+
     long start;
     long end;
 
@@ -119,11 +124,6 @@ public class MainActivity extends AppCompatActivity {
         Button buttonSearch = (Button) findViewById(R.id.searchButton);
         buttonSearch.setText(getResources().getString(R.string.searchButtonText));
 
-        //Python
-//        if (! Python.isStarted()) {
-//            Python.start(new AndroidPlatform(this));
-//        }
-
         suggest1 = findViewById(R.id.suggestionButton1);
         suggest2 = findViewById(R.id.suggestionButton2);
         suggest3 = findViewById(R.id.suggestionButton3);
@@ -138,15 +138,10 @@ public class MainActivity extends AppCompatActivity {
             byte[] buffer = new byte[size];
             is.read(buffer);
             fileText = new String(buffer);
-            fileText.toLowerCase();
         } catch (IOException ex){
             ex.printStackTrace();
         }
-        try {
-            spellObj = new Spelling(fileText);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        spellObj = new Spelling(fileText);
     }
 
     // paredzets datu pievienosanai (netiek izmantots)
@@ -511,6 +506,39 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void displaySuggestions(String words){
+        results.clear();
+
+        searchWords = Arrays.asList(words.split(" "));
+        wordToCorrect = searchWords.get(searchWords.size() - 1);
+        Log.d("CORRECTION_INFO", wordToCorrect);
+
+        start = System.currentTimeMillis();
+
+        results = spellObj.correct(wordToCorrect);
+
+        end = System.currentTimeMillis();
+        float search_time = (end - start) / 1000F;
+        String message = "Search lasted for " + search_time + " seconds";
+
+        Log.d("CORRECTION_INFO", message);
+
+        Log.d("CORRECTION_INFO", results.toString());
+
+        if(results.size() > 0){
+            suggest1.setText(results.get(0));
+            suggest1.setVisibility(View.VISIBLE);
+            if(results.size() > 1) {
+                suggest2.setText(results.get(1));
+                suggest2.setVisibility(View.VISIBLE);
+                if(results.size() > 2){
+                    suggest3.setText(results.get(2));
+                    suggest3.setVisibility(View.VISIBLE);
+                }
+            }
+        }
+    }
+
     public void searchTranslation(final String search, boolean again) {
 
             ArrayList<TermAndLang> allSimilarsList = new ArrayList<>();
@@ -583,64 +611,14 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(this, getResources().getText(R.string.ToastNotInDB), Toast.LENGTH_SHORT).show();
 
                         //Spell correction
-
-                        results.clear();
-
-                        start = System.currentTimeMillis();
-                        results = spellObj.correct(search);
-                        end = System.currentTimeMillis();
-
-                        float search_time = (end - start) / 1000F;
-                        String message = "Search lasted for " + search_time + " seconds";
-
-                        Log.d("SEARCH_INFO", message);
-
-                        Log.d("SEARCH_INFO", results.toString());
-
-                        if(results.size() > 0){
-                            suggest1.setText(results.get(0));
-                            suggest1.setVisibility(View.VISIBLE);
-                            if(results.size() > 1) {
-                                suggest2.setText(results.get(1));
-                                suggest2.setVisibility(View.VISIBLE);
-                                if(results.size() > 2){
-                                    suggest3.setText(results.get(2));
-                                    suggest3.setVisibility(View.VISIBLE);
-                                }
-                            }
-                        }
+                        displaySuggestions(search);
                     }
                 }
                 else {
                     Toast.makeText(this, getResources().getText(R.string.ToastNotInDB), Toast.LENGTH_SHORT).show();
 
                     //Spell correction
-
-                    results.clear();
-
-                    start = System.currentTimeMillis();
-                    results = spellObj.correct(search);
-                    end = System.currentTimeMillis();
-
-                    float search_time = (end - start) / 1000F;
-                    String message = "Search lasted for " + search_time + " seconds";
-
-                    Log.d("SEARCH_INFO", message);
-
-                    Log.d("SEARCH_INFO", results.toString());
-
-                    if(results.size() > 0){
-                        suggest1.setText(results.get(0));
-                        suggest1.setVisibility(View.VISIBLE);
-                        if(results.size() > 1) {
-                            suggest2.setText(results.get(1));
-                            suggest2.setVisibility(View.VISIBLE);
-                            if(results.size() > 2){
-                                suggest3.setText(results.get(2));
-                                suggest3.setVisibility(View.VISIBLE);
-                            }
-                        }
-                    }
+                    displaySuggestions(search);
                 }
             }
     }
