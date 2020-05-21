@@ -188,7 +188,12 @@ public class MainActivity extends AppCompatActivity {
         String search = searchTextField.getText().toString();
         hideKeyboard(view);
 
-        if (search.equals("")) {
+        if(search.startsWith(" ")){
+            LinearLayout child = (LinearLayout)this.findViewById(R.id.linearLayout2);
+            fillWhenEmptyEntry(child);
+            Toast.makeText(this, "Vārds nedrīkst sākties ar atstarpi", Toast.LENGTH_SHORT).show();
+        }
+        else if (search.equals("")) {
             LinearLayout child = (LinearLayout)this.findViewById(R.id.linearLayout2);
             fillWhenEmptyEntry(child);
             Toast.makeText(this, getResources().getText(R.string.ToastInsertTerm), Toast.LENGTH_SHORT).show();

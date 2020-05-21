@@ -1,8 +1,5 @@
 package com.example.nils.botaniskietermini;
 
-import android.util.Log;
-
-import java.io.*;
 import java.util.*;
 
 class Spelling {
@@ -11,7 +8,6 @@ class Spelling {
 
     List<Character> charList = new ArrayList<>();
     String charString = "aābcčdeēfgģhiījkķlļmnņoprsštuūvzžwxyqбвгдёжзийлпуфхцчшщъыьэюяäöüß";
-    String[] wordArray;
     List<String> wordList;
     double wordCount;
 
@@ -21,9 +17,11 @@ class Spelling {
             charList.add(c);
         }
 
-        wordArray = text.split(" ");
-        wordCount = wordArray.length;
-        wordList = Arrays.asList(wordArray);
+        text.toLowerCase();
+
+        wordList = Arrays.asList(text.split(" "));
+
+        wordCount = wordList.size();
 
         for(String word : wordList){
             double number = Collections.frequency(wordList, word)/wordCount;
@@ -50,39 +48,37 @@ class Spelling {
         word.toLowerCase();
         ArrayList<String> list = edits(word);
         Map<String, Double> candidates = new HashMap<>();
-        ArrayList<String> results = new ArrayList<>();
-        Map<Double, String> tempMap = new HashMap<>();
+        ValueComparator bvc = new ValueComparator(candidates);
+        TreeMap<String, Double> sorted_map = new TreeMap<String, Double>(bvc);
+        ArrayList<String> tempList = new ArrayList<>();
+        ArrayList<String> result = new ArrayList<>();
 
-        for(String s : list) {
-            if(dictionary.containsKey(s)) {
-                Log.d("CORRECTION_INFO",s);
+        for(String s : list){
+            if(dictionary.containsKey(s))
                 candidates.put(s, dictionary.get(s));
-            }
-            for (String w : edits(s))
-                if (dictionary.containsKey(w)) {
+            for(String w : edits(s))
+                if(dictionary.containsKey(w))
                     candidates.put(w, dictionary.get(w));
-                }
         }
 
-        if(candidates.size() > 0) {
-            for(String i : candidates.keySet()){
-                tempMap.put(candidates.get(i), i);
-            }
-            if(candidates.size() > 3){
+        sorted_map.putAll(candidates);
+        tempList.addAll(sorted_map.keySet());
+
+        if(tempList.size() > 0) {
+
+            if(tempList.size() > 3){
                 for (int i = 0; i < 3; i++) {
-                    results.add(tempMap.get(Collections.max(candidates.values())));
-                    candidates.remove(tempMap.get(Collections.max(candidates.values())));
-                    tempMap.remove(tempMap.get(Collections.max(candidates.values())));
+                    result.add(tempList.get(i));
                 }
-                return results;
+                return result;
             }
             else{
-                for(String a : candidates.keySet()){
-                    results.add(a);
+                for(String a : tempList){
+                    result.add(a);
                 }
-                return results;
+                return result;
             }
         }
-        return results;
+        return result;
     }
 }
