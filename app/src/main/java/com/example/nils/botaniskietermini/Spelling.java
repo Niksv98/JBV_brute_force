@@ -1,9 +1,5 @@
 package com.example.nils.botaniskietermini;
 
-<<<<<<< HEAD
-import java.io.*;
-=======
->>>>>>> not_finished
 import java.util.*;
 
 class Spelling {
@@ -15,7 +11,7 @@ class Spelling {
     List<String> wordList;
     double wordCount;
 
-    public Spelling(String text) throws IOException {
+    public Spelling(String text){
 
         for(char c : charString.toCharArray()) {
             charList.add(c);
@@ -51,29 +47,16 @@ class Spelling {
     public final ArrayList<String> correct(String word) {
         word.toLowerCase();
         ArrayList<String> list = edits(word);
-<<<<<<< HEAD
-        Map<String, Double> candidates = new HashMap<String, Double>();
-        ArrayList<String> tempList = new ArrayList<String>();
-        Map<Double, String> tempMap = new HashMap<Double, String>();
-
-        for(String s : list) {
-            if(dictionary.containsKey(s))
-                candidates.put(s, dictionary.get(s));
-            for (String w : edits(s))
-                if (dictionary.containsKey(w))
-=======
         Map<String, Double> candidates = new HashMap<>();
         ValueComparator bvc = new ValueComparator(candidates);
         TreeMap<String, Double> sorted_map = new TreeMap<String, Double>(bvc);
         ArrayList<String> tempList = new ArrayList<>();
-        ArrayList<String> result = new ArrayList<>();
 
         for(String s : list){
             if(dictionary.containsKey(s))
                 candidates.put(s, dictionary.get(s));
             for(String w : edits(s))
                 if(dictionary.containsKey(w))
->>>>>>> not_finished
                     candidates.put(w, dictionary.get(w));
         }
 
@@ -81,37 +64,17 @@ class Spelling {
         tempList.addAll(sorted_map.keySet());
 
         if(tempList.size() > 0) {
-
+            ArrayList<String> result = new ArrayList<>();
             if(tempList.size() > 3){
                 for (int i = 0; i < 3; i++) {
-<<<<<<< HEAD
-                    tempList.add(tempMap.get(Collections.max(candidates.values())));
-                    candidates.remove(tempMap.get(Collections.max(candidates.values())));
-                }
-                return tempList;
-            }
-            else{
-                for(String a : candidates.keySet()){
-                    tempList.add(a);
-                }
-                return tempList;
-            }
-        }
-
-        return tempList;
-=======
                     result.add(tempList.get(i));
                 }
                 return result;
             }
             else{
-                for(String a : tempList){
-                    result.add(a);
-                }
-                return result;
+                return tempList;
             }
         }
-        return result;
->>>>>>> not_finished
+        return tempList;
     }
 }

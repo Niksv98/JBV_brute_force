@@ -117,11 +117,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        final ImageView ZoomImages = (ImageView) findViewById(R.id.image2);
+        final ImageView ZoomImages = findViewById(R.id.image2);
         ZoomImages.setVisibility(View.INVISIBLE);
         updateCurrentContent(false);
         setTitle(R.string.appName);
-        Button buttonSearch = (Button) findViewById(R.id.searchButton);
+        Button buttonSearch = findViewById(R.id.searchButton);
         buttonSearch.setText(getResources().getString(R.string.searchButtonText));
 
         suggest1 = findViewById(R.id.suggestionButton1);
@@ -512,8 +512,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displaySuggestions(String words){
-        results.clear();
-
         searchWords = Arrays.asList(words.split(" "));
         wordToCorrect = searchWords.get(searchWords.size() - 1);
         Log.d("CORRECTION_INFO", wordToCorrect);
@@ -541,6 +539,9 @@ public class MainActivity extends AppCompatActivity {
                     suggest3.setVisibility(View.VISIBLE);
                 }
             }
+        }
+        else{
+            Toast.makeText(this, getResources().getText(R.string.ToastNotInDB), Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -613,15 +614,11 @@ public class MainActivity extends AppCompatActivity {
                                 .show();
                     }
                     else {
-                        Toast.makeText(this, getResources().getText(R.string.ToastNotInDB), Toast.LENGTH_SHORT).show();
-
                         //Spell correction
                         displaySuggestions(search);
                     }
                 }
                 else {
-                    Toast.makeText(this, getResources().getText(R.string.ToastNotInDB), Toast.LENGTH_SHORT).show();
-
                     //Spell correction
                     displaySuggestions(search);
                 }
