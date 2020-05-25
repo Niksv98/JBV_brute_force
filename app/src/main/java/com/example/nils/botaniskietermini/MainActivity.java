@@ -433,7 +433,7 @@ public class MainActivity extends AppCompatActivity {
         final String imageName = myDB.getNoteFromDB(term);
         if(allConstructionTitles.contains(imageName)) {
             final String nameOfClass[] = new String[1];
-            ImageView picto = (ImageView) findViewById(R.id.pictogram);
+            ImageView picto = findViewById(R.id.pictogram);
             picto.setVisibility(View.VISIBLE);
 
             picto.setOnClickListener(new View.OnClickListener() { //lai izsauktu klasi
@@ -517,15 +517,13 @@ public class MainActivity extends AppCompatActivity {
         Log.d("CORRECTION_INFO", wordToCorrect);
 
         start = System.currentTimeMillis();
-
         results = spellObj.correct(wordToCorrect);
-
         end = System.currentTimeMillis();
+
         float search_time = (end - start) / 1000F;
         String message = "Search lasted for " + search_time + " seconds";
 
         Log.d("CORRECTION_INFO", message);
-
         Log.d("CORRECTION_INFO", results.toString());
 
         if(results.size() > 0){
@@ -546,6 +544,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void searchTranslation(final String search, boolean again) {
+
+        Log.d("CORRECTION_INFO", "SEARCH FOR: " + search);
 
             ArrayList<TermAndLang> allSimilarsList = new ArrayList<>();
             ArrayList<String> allEndings = TermEndingHelper.getEndingsFromTerm(search);
@@ -586,10 +586,9 @@ public class MainActivity extends AppCompatActivity {
 
             } else if (allSimArray.length == 1) {
                 searchTerm = allSimilarsList.get(0).getTerm();
-
-                startSearchingForTerm(allSimilarsList.get(0).getTerm());
+                startSearchingForTerm(searchTerm);
             } else {
-                LinearLayout child = (LinearLayout) this.findViewById(R.id.linearLayout2);
+                LinearLayout child = this.findViewById(R.id.linearLayout2);
                 fillWhenEmptyEntry(child);
                 if(!again) {
                     final String searchUpdated = Character.isUpperCase(search.charAt(0)) ? Character.toLowerCase(search.charAt(0)) + search.substring(1) : Character.toUpperCase(search.charAt(0)) + search.substring(1);
